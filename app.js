@@ -45,7 +45,7 @@ const date = futureDate.getDate();
 giveaway.textContent = `giveaway ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am`;
 
 const futureTime = futureDate.getTime();
-function getRemaindingTime() {
+function getRemainingTime() {
   const today = new Date().getTime();
 
   const t = futureTime - today;
@@ -83,6 +83,6 @@ function getRemaindingTime() {
   }
 }
 // countdown;
-let countdown = setInterval(getRemaindingTime, 1000);
+let countdown = setInterval(getRemainingTime, 1000);
 //set initial values
-getRemaindingTime();
+getRemainingTime();
